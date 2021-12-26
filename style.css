@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background-color: #3494e4;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 10px 0 0;
+}
+h3 {
+    font-weight: 400;
+    margin: 10px 0;
+}
+.cup {
+    background-color: #fff;
+    border: 4px solid #133fc6;
+    color: #133fc6;
+    border-radius: 0 0 40px 40px;
+    width: 150px;
+    height: 330px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.cups {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.cup.cup--small {
+    margin: 0 0;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 95px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s;
+}
+.cup.cup--small.full {
+    background-color: #6ab3f8;
+    color: #fff;
+}
+
+.remained {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.remained span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.remained small {
+    font-size: 12px;
+}
+
+.percentage {
+    background: #6ab3f8;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    height: 0;
+}
+.text {
+    text-align: center;
+}
